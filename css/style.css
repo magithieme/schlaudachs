@@ -1,0 +1,119 @@
+* { margin: 0; padding: 0;}
+html { height: 100%; }
+body {
+    font-family: 'Nunito', sans-serif; 
+    font-weight: 300;
+    background: url(background-texture.jpg) #b6cc4b;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255,255,255,0.25) 100%), url(background-texture.jpg); /* FF3.6+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.25) 100%), url(background-texture.jpg); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.25) 100%), url(background-texture.jpg); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.25) 100%), url(background-texture.jpg); /* IE10+ */
+    background: linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.25) 100%), url(background-texture.jpg); /* W3C */
+    height: 100%;
+    background-attachment: fixed;
+    max-width: 38em;
+    margin: 5em auto 1em;
+}
+h1 {
+    background: url(logo.png) no-repeat; 
+    width: 227px; 
+    height: 227px; 
+    float: left;
+    margin-bottom: 0.5em;
+    border-radius: 114px;
+    padding: 0; 
+    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+    }
+ul.menu { float: left; width: 40%; margin-left: 10%; }
+    ul.menu li a { 
+        padding: 6px 20px; 
+        background: white; 
+        border: 1px solid black;
+        border-radius: 5px;
+        color: #680000;
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    }
+    ul.menu li.home a { padding-left: 32px; padding-right: 32px; background: url(home.png) white center 6px no-repeat; }
+    ul.menu li.home.active a, ul.menu li.home a:hover { background: url(home-active.png) #680000 center 6px no-repeat; }
+    ul.menu li.home a span { display: none; }
+    ul.menu li a:hover, ul.menu li.active a { color: white; background: #680000; }
+    ul.menu li { margin: 24px 0; list-style: none; text-align: center;}
+    ul.menu li.first { 
+        -webkit-transform: rotate(3deg) !important; 
+        -moz-transform: rotate(3deg) !important;
+        -o-transform: rotate(3deg) !important;
+        transform: rotate(3deg) !important; 
+    }
+    ul.menu li.odd {
+        -webkit-transform: rotate(7deg);
+        -moz-transform: rotate(7deg); 
+        -o-transform: rotate(7deg); 
+        transform: rotate(7deg); 
+        margin-bottom: -6px;
+    }
+    ul.menu li.even {
+        -webkit-transform: rotate(-4deg);
+        -moz-transform: rotate(-4deg); 
+        -o-transform: rotate(-4deg); 
+        transform: rotate(-4deg); 
+    }
+    ul.menu li.last {
+        -webkit-transform: rotate(-4deg) !important;
+        -moz-transform: rotate(-4deg) !important; 
+        -o-transform: rotate(-4deg) !important; 
+        transform: rotate(-4deg) !important; 
+    }
+
+#content { 
+        clear: both; 
+        min-width: 20em; 
+        padding-top: 5.0em;
+    }
+#content .img { 
+        float: right; 
+        border: 5px solid #680000; 
+        margin: -2.5em 0 60px 60px; 
+        border-radius: 10px; 
+        overflow: hidden; 
+        -webkit-transform: rotate(-4deg); 
+        -moz-transform: rotate(-4deg); 
+        -o-transform: rotate(-4deg); 
+        -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    }
+#content p {
+    line-height: 1.5em;
+    font-size: 110%; 
+    margin-bottom: 1em;
+    }
+h1 span { display: none;  }
+h2, h3 { font-family: 'Unkempt', cursive; color: #680000; font-weight: 200; }
+h2 { font-size: 220%; margin-bottom: 1em; }
+h3 { margin-top: 1.5em; font-size: 140%; }
+a { text-decoration:none; }
+a:link, a:visited { color: #680000; }
+a:hover { text-decoration: underline; }
+
+#footer {
+    margin: 0 auto;
+    width: 10em;
+    text-align: center;
+    clear: both;
+    padding: 90px 0 40px;
+    background: url(logo-small.png) transparent center 30px no-repeat;
+}
+#footer ul { 
+    padding: 0.5em 0 0;
+}
+#footer li { 
+    list-style: none; 
+    margin-left: 0;
+    }

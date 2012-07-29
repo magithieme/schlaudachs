@@ -44,7 +44,7 @@ ul.menu { float: left; width: 40%; margin-left: 10%; }
     ul.menu li.home.active a, ul.menu li.home a:hover { background: url(home-active.png) #680000 center 6px no-repeat; }
     ul.menu li.home a span { display: none; }
     ul.menu li a:hover, ul.menu li.active a { color: white; background: #680000; }
-    ul.menu li { margin: 24px 0; list-style: none; text-align: center;}
+    ul.menu li { margin: 24px 0; list-style: none; text-align: center; -webkit-backface-visibility: hidden; }
     ul.menu li.first { 
         -webkit-transform: rotate(3deg) !important; 
         -moz-transform: rotate(3deg) !important;
@@ -88,7 +88,7 @@ ul.menu { float: left; width: 40%; margin-left: 10%; }
         -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
         -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
         box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-        opacity: 0.999;
+        -webkit-backface-visibility: hidden;
     }
 #content p {
     line-height: 1.5em;

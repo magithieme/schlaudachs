@@ -99,15 +99,15 @@ ul.menu { float: left; width: 40%; margin-left: 10%; }
         box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
         -webkit-backface-visibility: hidden;
     }
-.img:nth-child(1) {
+.img:nth-child(1), .img:nth-child(4), .img:nth-child(7) {
     -webkit-transform: rotate(4deg); 
     -moz-transform: rotate(4deg); 
     -o-transform: rotate(4deg); 
 }
-.img:nth-child(2) {
+.img:nth-child(2), .img:nth-child(5), .img:nth-child(8) {
     -webkit-transform: rotate(-10deg); 
-    -moz-transform: rotate(2deg); 
-    -o-transform: rotate(2deg); 
+    -moz-transform: rotate(-10deg); 
+    -o-transform: rotate(-10deg); 
 }
 #content p {
     line-height: 1.5em;

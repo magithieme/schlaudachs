@@ -31,6 +31,7 @@ ul.menu { float: left; width: 40%; margin-left: 10%; }
         padding: 6px 20px; 
         background: white; 
         border: 1px solid black;
+        border: 1px solid rgba(0,0,0,0.7);
         border-radius: 5px;
         color: #680000;
         text-decoration: none;
@@ -72,16 +73,24 @@ ul.menu { float: left; width: 40%; margin-left: 10%; }
     }
 
 #content { 
-        clear: both; 
+        clear: left; 
         min-width: 20em; 
         padding-top: 5.0em;
+        padding-right: 480px;
     }
-#content .img { 
+.images { 
         float: right; 
-        border: 5px solid #680000; 
-        margin: -2.5em 0 60px 60px; 
+        margin: 5em 0 60px 60px;
+        /* overflow: hidden;  */
+        position: relative;
+        width: 280px; height: 420px;
+    }
+.img { 
+        height: 420px; width: 280px;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        border: 1px solid rgba(0,0,0,0.3); /* #680000;  */
         border-radius: 10px; 
-        overflow: hidden; 
         -webkit-transform: rotate(-4deg); 
         -moz-transform: rotate(-4deg); 
         -o-transform: rotate(-4deg); 
@@ -90,6 +99,16 @@ ul.menu { float: left; width: 40%; margin-left: 10%; }
         box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
         -webkit-backface-visibility: hidden;
     }
+.img:nth-child(1) {
+    -webkit-transform: rotate(4deg); 
+    -moz-transform: rotate(4deg); 
+    -o-transform: rotate(4deg); 
+}
+.img:nth-child(2) {
+    -webkit-transform: rotate(-10deg); 
+    -moz-transform: rotate(2deg); 
+    -o-transform: rotate(2deg); 
+}
 #content p {
     line-height: 1.5em;
     font-size: 110%; 
